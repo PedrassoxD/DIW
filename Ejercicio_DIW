@@ -1,0 +1,45 @@
+
+mvn install:install-file -Dfile=/home/estudiante/Documentos/ojdbc14.jar -DgroupId=ojdbc14 -DartifactId=ojdbc14 -Dversion=10.2.0.4.0 -Dpackaging=jar
+
+1.- Yes.                  
+
+
+-What site is this? (Is it clear enough?)
+	
+	It is a place where they sell different products, where we can find computer products, 		merchandising of office objects such as mugs, etc..
+	
+
+-Does it follow conventions?
+        Menus, logos, content,…
+	
+		Yes.
+
+        Are elements clear enough? (Search inputs, icons, social networks,…)
+
+		Yes, and they are also well distributed by the page.	
+
+-Is the hierarchy evident (sections, subsections,…)? Can I see the major sections of the site? What options do I have at this level of the hierarchy?
+
+	Yes, because the menu is very intuitive when changing sections and entering subsections.
+
+-Are the pages divided in well defined sections / layers?
+
+	Yes.
+
+-Can you distinguish links and buttons?
+
+	if because the links contain a "title" that represents them and the buttons are clear.
+
+-Is there any content that distracts the user?
+
+	Not since the site is 100% dedicated to the purchase of their products, and has its own 	ads, which are related to what they are selling.
+
+-Is the content structured?
+
+	Yes by sections and by content blocks.
+
+
+-Are there any search options? Are they clear enough?
+
+	Yes, one looks good but there is another that is much more difficult to differentiate, as 	it does not look good.
+
