@@ -1,0 +1,1 @@
+in the latter, talk about the native prototype, the value it has and the effort it entails, this is where we begin to work with the different programming languages, and making the native prototype based on sketches and digital prototypes.

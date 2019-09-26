@@ -1,0 +1,1 @@
+The second video talk about digital prototyping is the part where we will start to shape our sketch or prototype on paper, this is where we can give functionality to the different windows that we have previously created, and start working on the app. Make using of diferents tools.
