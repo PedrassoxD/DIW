@@ -1,0 +1,28 @@
+.container{
+
+    margin-top: 10px;
+
+}
+
+
+.col-md-8{
+
+    background-color: greenyellow;
+    border: 1px solid black;
+
+}
+
+.col-lg-7{
+
+    background-color: #F40BFF;
+    border: 1px solid black;
+
+}
+
+.col-lg-1{
+
+    background-color: #F40BFF;
+    border: 1px solid black;
+    height: 25em;
+
+}
