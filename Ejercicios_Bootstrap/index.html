@@ -13,29 +13,51 @@
 </head>
   <body>
 
+    <nav class="navbar navbar-expand-sm navbar-light bg-light nav-tabs">
+      <a class="navbar-brand" href="index.html"><img class="d-inline-block align-top" alt="Esto es una imagen" src="logo.png" width="30" height="30"/></a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Principal <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tablaPrecios.html">Tabla de precios</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recetas</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="comidasEspeciales.html">Comidas Especiales</a>
+              <a class="dropdown-item" href="#">Marroneras</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
 
-<div class="container">
-
-    <div class="row">
-        <div class="col-md-8 offset-lg-2">.col-md-8</div>
-    </div>
-    <div class="row">
-        <div class="col-lg-1 offset-lg-2">.col</div>
-        <div class="col-lg-7 offset-xs-1">.col-md-4</div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">.col-md-6</div>
-        <div class="col-md-6">.col-md-6</div>
-    </div>
-
-</div>
+      <div class="row justify-content-center">
+        <div class="btn-group">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                  Menu de la casa
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+              <a class="dropdown-item" href="#">Primer plato</a>
+              <a class="dropdown-item" href="#">Segundo plato</a>
+              <h6 class="dropdown-item" href="#">Postre</h6>
+            </div>
+          </div>
+      </div>
 
 
 
-
-
-
-      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
