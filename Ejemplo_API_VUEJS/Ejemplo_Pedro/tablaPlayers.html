@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,57 +10,92 @@
     <link type="text/css" rel="stylesheet" href="style.css">
     <title>Jugadores</title>
 </head>
+
 <body>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light nav-tabs">
-            <a class="navbar-brand" href="index.html"><img class="d-inline-block align-top" alt="Esto es una imagen" src="logo.png" width="30" height="30"/></a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light nav-tabs">
+        <a class="navbar-brand" href="index.html"><img class="d-inline-block align-top" alt="Esto es una imagen" src="logo.png" width="30" height="30" /></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Principal <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="tablaPlayers.html">Tabla de jugadores</a>
                 </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                </form>
-            </div>
-        </nav>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
 
-        <div class="container">
-            <div id="app" class="row">
-                <div class="col-md-8 col-md-offset-2">
+    <div class="container">
+        <div id="app" class="row">
+            <div class="col-md-8 col-md-offset-2">
                 <input id="input-search" type="text" class="form-control" v-model="textSearch" placeholder='Search...'>
                 <div id="list-teams" v-if="teamsFilter && teamsFilter.length">
-                    <div class="panel panel-default" v-for="team of teamsFilter">
-                    <div class="panel-heading">
-                        <img v-bind:src="team.flag" alt="" width="30px">
-                        <span>ID Player: {{team.team.id}}</span>
-                    </div>
-                    <div class="panel-body">
-                        <div class="row">
-                        <div class="col-md-6">First Name Player: <strong>{{team.first_name}}</strong></div>
-                        <div class="col-md-6">Last Name Player: <strong>{{team.last_name}}</strong></div>
-                        </div> 
-                        <div class="row">
-                        <div class="col-md-6">Position: <strong>{{team.position}}</strong></div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <table class="mt-5 table table-striped table-inverse table-responsive table-center table-bordered text-center" v-for="team of teamsFilter">
+                                <thead class="thead-inverse">
+                                    <tr>
+                                        <th>ID Jugador</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>Posición</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">{{team.team.id}}</td>
+                                        <td>{{team.first_name}}</td>
+                                        <td>{{team.last_name}}</td>
+                                        <td>{{team.position}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <div class="text-center" v-else>
                     No results!
                 </div>
-                </div>
-            </div>  
+            </div>
         </div>
-        
+    </div>
+
+
+
+
+
+    <!--<div id="list-teams" v-if="teamsFilter && teamsFilter.length">
+                     <div class="panel panel-default" v-for="team of teamsFilter">
+                        <div class="panel-heading">
+                            <img v-bind:src="team.flag" alt="" width="30px">
+                            <span>ID Player: {{team.team.id}}</span>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-6">First Name Player: <strong>{{team.first_name}}</strong></div>
+                                <div class="col-md-6">Last Name Player: <strong>{{team.last_name}}</strong></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">Position: <strong>{{team.position}}</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="text-center" v-else>
+                        No results!
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
     <script src="https://unpkg.com/vue"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -69,4 +105,5 @@
     <script src="js.js"></script>
 
 </body>
+
 </html>
