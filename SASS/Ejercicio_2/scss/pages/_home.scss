@@ -1,0 +1,28 @@
+$size: 50%;
+$posicion: center;
+$fontColor: white;
+.div {
+    text-align: $posicion;
+    height: $size;
+}
+
+.div2 {
+    @include posicion();
+}
+
+.boton {
+    @include boton(red, 5px, 45px);
+}
+
+p {
+    color: $fontColor;
+}
+
+.footer {
+    @include posicion();
+    background-color: lightgray;
+}
+
+body {
+    background-color: rgb(129, 16, 16);
+}

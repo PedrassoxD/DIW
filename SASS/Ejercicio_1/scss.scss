@@ -1,0 +1,57 @@
+$bodycolor: #ffffff;
+$fontsize: 16px;
+$fontstyle: arial,
+sans-serif;
+$headerBackground: rgb(23, 236, 255);
+$headerHeight: 100px;
+$mainBackground: rgb(117, 5, 5);
+$footerBackground: rgb(117, 5, 5);
+$footerHeight: 100px;
+body {
+    color: $bodycolor;
+    /* Pasar a variable */
+    display: flex;
+    font: $fontsize, $fontstyle;
+    /* pasar a dos variables: texto y tamaño de texto */
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.wrapper {
+    margin: 0 40px;
+}
+
+.header {
+    background: $headerBackground;
+    /* Pasar a variable */
+    height: $headerHeight;
+    /* Pasar a variable */
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background: $mainBackground;
+    /* Pasar a variable */
+    flex: 1;
+}
+
+.main__title {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.main__content p {
+    font-size: 1.1em;
+    line-height: 140%;
+}
+
+.footer {
+    background: $footerBackground;
+    /* Pasar a variable */
+    height: $footerHeight;
+    /* Pasar a variable */
+    padding: 10px 0;
+    box-sizing: border-box;
+}

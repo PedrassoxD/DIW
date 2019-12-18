@@ -1,0 +1,20 @@
+$movil: 75px;
+$tablet: 100px;
+$desktop: 110px;
+$mediaMovil: 360px;
+$mediaTablet: 768px;
+$mediaDesktop: 1280px;
+.header {
+    @media all and (min-width: $mediaMovil) {
+        height: $movil;
+        @include header();
+    }
+    @media all and (min-width: $mediaTablet) {
+        height: $tablet;
+        @include header();
+    }
+    @media all and (min-width: $mediaDesktop) {
+        height: $desktop;
+        @include header();
+    }
+}

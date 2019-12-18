@@ -1,0 +1,53 @@
+@media all and (min-width: 360px) {
+  .header {
+    height: 75px;
+    text-align: center;
+    background-color: #b2b9b3;
+  }
+}
+@media all and (min-width: 768px) {
+  .header {
+    height: 100px;
+    text-align: center;
+    background-color: #b2b9b3;
+  }
+}
+@media all and (min-width: 1280px) {
+  .header {
+    height: 110px;
+    text-align: center;
+    background-color: #b2b9b3;
+  }
+}
+
+.div {
+  text-align: center;
+  height: 50%;
+}
+
+.div2 {
+  text-align: center;
+  background-color: lightyellow;
+}
+
+.boton {
+  background-color: red;
+  border-radius: 5px;
+  height: 45px;
+}
+
+p {
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  background-color: lightyellow;
+  background-color: lightgray;
+}
+
+body {
+  background-color: #811010;
+}
+
+/*# sourceMappingURL=main.css.map */

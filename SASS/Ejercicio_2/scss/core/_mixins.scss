@@ -1,0 +1,15 @@
+@mixin posicion() {
+    text-align: center;
+    background-color: lightyellow;
+}
+
+@mixin boton($color, $borde, $altura) {
+    background-color: $color;
+    border-radius: $borde;
+    height: $altura;
+}
+
+@mixin header() {
+    text-align: center;
+    background-color: rgb(178, 185, 179);
+}
