@@ -1,0 +1,103 @@
+.video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    height: 50%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.wow {
+    height: 500px;
+}
+
+@media only screen and (max-width: 320px) {
+    .video-responsive iframe,
+    .video-responsive object,
+    .video-responsive embed {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 45%;
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.tarjeta {
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 360px) {
+    .tarjeta {
+        padding-top: 10%;
+        text-align: center;
+        display: felx;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .titulo {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 1129px) {
+    .contenedor {
+        padding-top: 10%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tarjeta {
+        margin: auto;
+        padding: 3rem;
+        text-align: center;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .tarjeta {
+        margin: auto;
+        padding: 5rem;
+        text-align: center;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.parrafo {
+    font-size: 1.5rem;
+}
