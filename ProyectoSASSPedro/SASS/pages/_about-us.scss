@@ -1,0 +1,109 @@
+@import 'core/variables';
+
+/* Mapa de la sección ¿Quienes Somos? */
+
+.google-maps {
+    position: $positionR;
+    padding-bottom: 45%;
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $width100 !important;
+    height: $height100 !important;
+}
+
+.contentAbout {
+    font-family: Calibri;
+    padding: 2%;
+    font-size: 1.5rem;
+}
+
+
+/* Formulario Contact */
+
+
+/* Estilo de los input, selects y textarea */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+
+/* Estilo del label para que aparezca al lado de los input */
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+
+/* Estilo del botón de enviar */
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+
+/* Estilo del contenedor del about */
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+
+/* Columna flotante para los label: 25% de ancho */
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+
+/* Columna flotante para los input: 75% de ancho */
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+/* Hace que estén alineados los label con los input*/
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Cuando la pantalla tiene menos de 600px de ancho, hace que las dos columnas se coloquen una encima de la otra en lugar de una al lado de la otra */
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: $width100;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,211 @@
+@import 'core/variables';
+
+/* Estilo de los Cards de las secciones de Cocktails */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+    grid-gap: 40px;
+    padding: 60px 0;
+}
+
+.cards {
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 40px;
+}
+
+.card {
+    grid-column-end: span 4;
+    display: $displayFlex;
+    flex-direction: column;
+    background-color: #39393b;
+    transition: all 0.3s ease 0s;
+}
+
+
+/* Al poner el ratón encima, se traslada -7px (se mueve). */
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+
+/* Bloque que contiene la imagen del card */
+
+.card__image-container {
+    width: $width100;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: $positionR;
+}
+
+
+/* Imagen del card */
+
+.card__image-container>img {
+    width: $width100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Bloque que contiene el titulo y el resto de información del card */
+
+.card_content {
+    padding: 20px;
+}
+
+
+/* Titulo del card */
+
+.card_title {
+    margin-bottom: 20px;
+}
+
+
+/* Instrucciones del cocktail */
+
+.card_info {
+    display: $displayFlex;
+    align-self: end;
+    align-items: center;
+}
+
+
+/* Más información sobre el cocktail */
+
+.card_price {
+    margin-left: auto;
+    padding: 5px 20px;
+    background-color: #303032;
+    border-radius: 20px;
+}
+
+
+/* Medias de dispositivos para hacer los cards responsive */
+
+@media only screen and (max-width: $media1000) {
+    .card {
+        grid-column-end: span 6;
+    }
+}
+
+@media only screen and (max-width: $media700) {
+    main {
+        grid-gap: 20px;
+    }
+    .card {
+        grid-column-end: span 12;
+    }
+}
+
+@media only screen and (max-width: $media500) {
+    main {
+        grid-template-columns: 10px repeat(6, 1fr) 10px;
+        grid-gap: 10px;
+    }
+    .cards {
+        grid-column-end: 2 / span 6;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px;
+    }
+    .card {
+        grid-column-end: span 6;
+    }
+}
+
+
+/*------------------------------------*/
+
+
+/* Estilo del card que aparece en la sección de RandomCocktail */
+
+
+/* Estilo de imagen dentro del card */
+
+img {
+    height: auto;
+    max-width: $width100;
+    vertical-align: middle;
+}
+
+
+/* Bloque que contiene la estructura del card */
+
+.cardsRandom {
+    display: $displayFlex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Bloque que contiene el card que muestra la imagen del cocktail y su información */
+
+.cards_itemRandom {
+    display: $displayFlex;
+    padding: 1rem;
+}
+
+
+/* Medias para que el card sea responsive y se vea en distintos dispositivos */
+
+@media (min-width: $media40r) {
+    .cards_itemRandom {
+        width: $width50;
+    }
+}
+
+@media (min-width: $media56r) {
+    .cards_itemRandom {
+        width: 33.3333%;
+    }
+}
+
+
+/* Estilo global del que contiene el resto de estilos que se ven mas abajo */
+
+.cardRandom {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: $displayFlex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+/* Contenido del card */
+
+.card_contentRandom {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, rgb(0, 0, 0) 40%, rgb(3, 109, 247) 100%);
+}
+
+
+/* Titulo del card */
+
+.card_titleRandom {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+
+/* Texto del card */
+
+.card_textRandom {
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}

@@ -1,0 +1,44 @@
+@import 'core/variables';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #ecf9ff;
+}
+
+.bd {
+    background-image: url(../../assets/img/fondo2.jpg);
+    background-repeat: $bgRepeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+/* Videos de la sección del Home */
+
+.video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: $positionR;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    height: $height50;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: $width50;
+}
+
+.cols {
+    columns: 2;
+    text-align: justify;
+}

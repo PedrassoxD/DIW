@@ -1,0 +1,29 @@
+@import 'core/variables';
+footer {
+    position: $positionR;
+    bottom: 0;
+}
+
+.footer-distributed {
+    background-color: #2c292f;
+    box-sizing: border-box;
+    width: $width100;
+    font: bold 16px sans-serif;
+    color: white;
+}
+
+.divContent {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+@media (max-height: $media800) {
+    footer {
+        position: static;
+    }
+}
+
+footer>div>a {
+    color: white;
+}

@@ -1,0 +1,11 @@
+@import 'core/variables';
+.header {
+    header {
+        padding-top: 10%;
+    }
+    @media (max-height: $media800) {
+        header {
+            padding-top: 40px;
+        }
+    }
+}

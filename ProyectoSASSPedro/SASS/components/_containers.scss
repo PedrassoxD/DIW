@@ -1,0 +1,48 @@
+@import 'core/variables';
+.container {
+    background-color: #ecf9ff;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+@media (min-width: $media576) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: $media768) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: $media992) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: $mediaDesktop) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.box {
+    border: 1px solid black;
+    border-radius: 2%;
+}
+
+.container-fluid {
+    margin-top: 10%;
+    background-color: white;
+    width: $width100;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
