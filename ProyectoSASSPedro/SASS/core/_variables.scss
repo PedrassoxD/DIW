@@ -3,6 +3,7 @@
 $mediaMovil: 360px;
 $media500: 500px;
 $media576: 576px;
+$media600: 600px;
 $media700: 700px;
 $mediaTablet: 768px;
 $media768: 768px;
@@ -16,6 +17,7 @@ $media56r: 56rem;
 /* Posiciones */
 
 $positionR: relative;
+$positionA: absolute;
 
 /* Anchos y altos */
 
@@ -31,3 +33,28 @@ $bgRepeat: no-repeat;
 /* Display */
 
 $displayFlex: flex;
+$displayGrid: grid;
+
+/* Overflow */
+
+$overflowH: hidden;
+
+/* Font */
+
+$fontCalibri: Calibri;
+
+/* Variables Boton RandomCocktail */
+
+$bpadding10: 10px;
+$bfontW: 600;
+$bfontS: 20px;
+$bcolor: #ffffff;
+$bBgColor: #1883ba;
+$bBorderR: 6px;
+$bBorder: 2px solid #0016b0;
+
+/* Variables Card Cocktails */
+
+$cGridTemCol: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+$cGridGap40: 40px;
+$cPadding60-0: 60px 0;

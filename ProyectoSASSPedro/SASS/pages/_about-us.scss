@@ -6,11 +6,11 @@
     position: $positionR;
     padding-bottom: 45%;
     height: 0;
-    overflow: hidden;
+    overflow: $overflowH;
 }
 
 .google-maps iframe {
-    position: absolute;
+    position: $positionA;
     top: 0;
     left: 0;
     width: $width100 !important;
@@ -18,7 +18,7 @@
 }
 
 .contentAbout {
-    font-family: Calibri;
+    font-family: $fontCalibri;
     padding: 2%;
     font-size: 1.5rem;
 }

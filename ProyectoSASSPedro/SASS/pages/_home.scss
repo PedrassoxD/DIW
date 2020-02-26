@@ -29,7 +29,7 @@ html {
 }
 
 .videoWrapper iframe {
-    position: absolute;
+    position: $positionA;
     top: 0;
     left: 0;
     width: 100%;
@@ -41,7 +41,7 @@ html {
     text-align: justify;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $media600) {
     .cols {
         column-count: 2;
         column-gap: 3em;

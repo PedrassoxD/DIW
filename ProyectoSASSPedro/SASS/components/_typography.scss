@@ -16,22 +16,22 @@
 /* Algunos de los titulos de la aplicación tendrán este estilo. */
 
 .titulo {
-    font-family: Calibri;
+    font-family: $fontCalibri;
     font-size: 50px;
     margin-top: 50px;
 }
 
 .subtitulo {
-    font-family: Calibri;
+    font-family: $fontCalibri;
     font-size: 25px;
 }
 
 .tituloCock {
-    font-family: Calibri;
+    font-family: $fontCalibri;
     font-size: 2em;
 }
 
 .tituloAbout {
-    font-family: Calibri;
+    font-family: $fontCalibri;
     font-size: 35px;
 }

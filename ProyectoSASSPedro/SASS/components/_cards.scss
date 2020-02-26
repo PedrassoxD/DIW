@@ -3,17 +3,17 @@
 /* Estilo de los Cards de las secciones de Cocktails */
 
 main {
-    display: grid;
-    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
-    grid-gap: 40px;
-    padding: 60px 0;
+    display: $displayGrid;
+    grid-template-columns: $cGridTemCol;
+    grid-gap: $cGridGap40;
+    padding: $cPadding60-0;
 }
 
 .cards {
     grid-column: 2 / span 12;
-    display: grid;
+    display: $displayGrid;
     grid-template-columns: repeat(12, minmax(auto, 60px));
-    grid-gap: 40px;
+    grid-gap: $cGridGap40;
 }
 
 .card {
@@ -37,7 +37,7 @@ main {
 .card__image-container {
     width: $width100;
     padding-top: 56.25%;
-    overflow: hidden;
+    overflow: $overflowH;
     position: $positionR;
 }
 
@@ -46,7 +46,7 @@ main {
 
 .card__image-container>img {
     width: $width100;
-    position: absolute;
+    position: $positionA;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -176,7 +176,7 @@ img {
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: $displayFlex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: $overflowH;
 }
 
 
@@ -194,7 +194,7 @@ img {
     color: #ffffff;
     font-size: 1.1rem;
     font-weight: 700;
-    font-family: Calibri;
+    font-family: $fontCalibri;
     letter-spacing: 1px;
     text-transform: capitalize;
     margin: 0px;
@@ -205,7 +205,7 @@ img {
 
 .card_textRandom {
     color: #ffffff;
-    font-family: Calibri;
+    font-family: $fontCalibri;
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;

@@ -2,16 +2,16 @@
 
 .botonRandomCocktail {
     text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #1883ba;
-    border-radius: 6px;
-    border: 2px solid #0016b0;
+    padding: $bpadding10;
+    font-weight: $bfontW;
+    font-size: $bfontS;
+    color: $bcolor;
+    background-color: $bBgColor;
+    border-radius: $bBorderR;
+    border: $bBorder;
 }
 
 .botonRandomCocktail:hover {
-    color: #1883ba;
-    background-color: #ffffff;
+    color: $bBgColor;
+    background-color: $bcolor;
 }
