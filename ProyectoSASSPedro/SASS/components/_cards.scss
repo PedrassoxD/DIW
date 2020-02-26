@@ -184,7 +184,7 @@ img {
 
 .card_contentRandom {
     padding: 1rem;
-    background: linear-gradient(to bottom left, rgb(0, 0, 0) 40%, rgb(3, 109, 247) 100%);
+    background: linear-gradient(to bottom left, rgb(0, 0, 0) 40%, rgb(255, 107, 38) 100%);
 }
 
 
@@ -194,6 +194,7 @@ img {
     color: #ffffff;
     font-size: 1.1rem;
     font-weight: 700;
+    font-family: Calibri;
     letter-spacing: 1px;
     text-transform: capitalize;
     margin: 0px;
@@ -204,6 +205,7 @@ img {
 
 .card_textRandom {
     color: #ffffff;
+    font-family: Calibri;
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;

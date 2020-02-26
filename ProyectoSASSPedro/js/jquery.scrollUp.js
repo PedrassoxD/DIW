@@ -1,8 +1,8 @@
-(function ($, window, document) {
+(function($, window, document) {
     'use strict';
 
     // Main function
-    $.fn.scrollUp = function (options) {
+    $.fn.scrollUp = function(options) {
 
         // Ensure that only one scrollUp exists
         if (!$.data(document.body, 'scrollUp')) {
@@ -12,7 +12,7 @@
     };
 
     // Init
-    $.fn.scrollUp.init = function (options) {
+    $.fn.scrollUp.init = function(options) {
 
         // Define vars
         var o = $.fn.scrollUp.settings = $.extend({}, $.fn.scrollUp.defaults, options),
@@ -89,7 +89,7 @@
         }
 
         // Scroll function
-        scrollEvent = $(window).scroll(function () {
+        scrollEvent = $(window).scroll(function() {
             if ($(window).scrollTop() > scrollDis) {
                 if (!triggerVisible) {
                     $self[animIn](animSpeed);
@@ -114,7 +114,7 @@
         }
 
         // To the top
-        $self.click(function (e) {
+        $self.click(function(e) {
             e.preventDefault();
 
             $('html, body').animate({
@@ -125,24 +125,24 @@
 
     // Defaults
     $.fn.scrollUp.defaults = {
-        scrollName: 'scrollUp',      // Element ID
-        scrollDistance: 300,         // Distance from top/bottom before showing element (px)
-        scrollFrom: 'top',           // 'top' or 'bottom'
-        scrollSpeed: 300,            // Speed back to top (ms)
-        easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
-        animation: 'fade',           // Fade, slide, none
-        animationSpeed: 200,         // Animation in speed (ms)
-        scrollTrigger: false,        // Set a custom triggering element. Can be an HTML string or jQuery object
-        scrollTarget: false,         // Set a custom target element for scrolling to. Can be element or number
+        scrollName: 'scrollUp', // Element ID
+        scrollDistance: 300, // Distance from top/bottom before showing element (px)
+        scrollFrom: 'top', // 'top' or 'bottom'
+        scrollSpeed: 300, // Speed back to top (ms)
+        easingType: 'linear', // Scroll to top easing (see http://easings.net/)
+        animation: 'fade', // Fade, slide, none
+        animationSpeed: 200, // Animation in speed (ms)
+        scrollTrigger: false, // Set a custom triggering element. Can be an HTML string or jQuery object
+        scrollTarget: false, // Set a custom target element for scrolling to. Can be element or number
         scrollText: 'Scroll to top', // Text for element, can contain HTML
-        scrollTitle: false,          // Set a custom <a> title if required. Defaults to scrollText
-        scrollImg: false,            // Set true to use image
-        activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-        zIndex: 2147483647           // Z-Index for the overlay
+        scrollTitle: false, // Set a custom <a> title if required. Defaults to scrollText
+        scrollImg: false, // Set true to use image
+        activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        zIndex: 2147483647 // Z-Index for the overlay
     };
 
     // Destroy scrollUp plugin and clean all modifications to the DOM
-    $.fn.scrollUp.destroy = function (scrollEvent) {
+    $.fn.scrollUp.destroy = function(scrollEvent) {
         $.removeData(document.body, 'scrollUp');
         $('#' + $.fn.scrollUp.settings.scrollName).remove();
         $('#' + $.fn.scrollUp.settings.scrollName + '-active').remove();
@@ -151,7 +151,7 @@
         if ($.fn.jquery.split('.')[1] >= 7) {
             $(window).off('scroll', scrollEvent);
 
-        // Else use the old .unbind()
+            // Else use the old .unbind()
         } else {
             $(window).unbind('scroll', scrollEvent);
         }

@@ -1,7 +1,37 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Estilos de los textos que aparecen en los cards de los cocktails */
+
 .text--medium {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
     color: #ecf0f1;
+}
+
+
+/* Algunos de los titulos de la aplicación tendrán este estilo. */
+
+.titulo {
+    font-family: Calibri;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.subtitulo {
+    font-family: Calibri;
+    font-size: 25px;
+}
+
+.tituloCock {
+    font-family: Calibri;
+    font-size: 2em;
+}
+
+.tituloAbout {
+    font-family: Calibri;
+    font-size: 35px;
 }

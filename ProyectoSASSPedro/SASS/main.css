@@ -63,6 +63,7 @@ footer > div > a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: Calibri;
   font-size: 17px; }
 
 /* Añade una clase activa para resaltar la página actual */
@@ -76,7 +77,9 @@ footer > div > a {
 
 /* Cuando la pantalla tenga menos de 600 píxeles de ancho, oculta todos los enlaces, excepto el primero ("Home"). */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child),
+  .topnav a:not(:first-child) {
+    display: none; }
+
   .topnav a.icon {
     float: right;
     display: block; } }
@@ -86,7 +89,7 @@ Esta clase hace que el topnav se vea bien en pantallas pequeñas (muestra los en
   .topnav.responsive {
     position: relative; }
 
-  .topnav.responsive a.icon {
+  .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0; }
@@ -94,20 +97,9 @@ Esta clase hace que el topnav se vea bien en pantallas pequeñas (muestra los en
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left; }
-
-  .topnav.responsive .dropdown {
-    float: none; }
-
-  .topnav.responsive .dropdown-content {
-    position: relative; }
-
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
     text-align: left; } }
 /* Botón para mostrar aleatoriamente un cocktail */
-.boton_personalizado {
+.botonRandomCocktail {
   text-decoration: none;
   padding: 10px;
   font-weight: 600;
@@ -117,7 +109,7 @@ Esta clase hace que el topnav se vea bien en pantallas pequeñas (muestra los en
   border-radius: 6px;
   border: 2px solid #0016b0; }
 
-.boton_personalizado:hover {
+.botonRandomCocktail:hover {
   color: #1883ba;
   background-color: #ffffff; }
 
@@ -248,13 +240,14 @@ img {
 /* Contenido del card */
 .card_contentRandom {
   padding: 1rem;
-  background: linear-gradient(to bottom left, black 40%, #036df7 100%); }
+  background: linear-gradient(to bottom left, black 40%, #ff6b26 100%); }
 
 /* Titulo del card */
 .card_titleRandom {
   color: #ffffff;
   font-size: 1.1rem;
   font-weight: 700;
+  font-family: Calibri;
   letter-spacing: 1px;
   text-transform: capitalize;
   margin: 0px; }
@@ -262,6 +255,7 @@ img {
 /* Texto del card */
 .card_textRandom {
   color: #ffffff;
+  font-family: Calibri;
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;
@@ -311,20 +305,35 @@ img {
   right: 20px;
   width: 50px;
   height: 50px;
-  background: url("../../assets/img/irarriba.png");
+  background: url("../../assets/img/irArriba2.png");
   background-size: cover; }
 
 /* Font */
-/* Algunos de los titulos de la aplicación tendrán este estilo. */
-.titulo {
-  font-family: Calibri; }
-
+/* Estilos de los textos que aparecen en los cards de los cocktails */
 .text--medium {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #ecf0f1; }
+
+/* Algunos de los titulos de la aplicación tendrán este estilo. */
+.titulo {
+  font-family: Calibri;
+  font-size: 50px;
+  margin-top: 50px; }
+
+.subtitulo {
+  font-family: Calibri;
+  font-size: 25px; }
+
+.tituloCock {
+  font-family: Calibri;
+  font-size: 2em; }
+
+.tituloAbout {
+  font-family: Calibri;
+  font-size: 35px; }
 
 /* Medias para dispositivos */
 /* Posiciones */
@@ -428,24 +437,29 @@ html {
   background-attachment: fixed; }
 
 /* Videos de la sección del Home */
-.video-responsive {
-  height: 0;
-  overflow: hidden;
+.videoWrapper {
+  position: relative;
   padding-bottom: 56.25%;
-  padding-top: 30px;
-  position: relative; }
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 20px; }
 
-.video-responsive iframe,
-.video-responsive object,
-.video-responsive embed {
-  height: 50%;
-  text-align: center;
+.videoWrapper iframe {
   position: absolute;
   top: 0;
-  width: 50%; }
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .cols {
   columns: 2;
   text-align: justify; }
+
+@media screen and (max-width: 600px) {
+  .cols {
+    column-count: 2;
+    column-gap: 3em;
+    column-rule: 1px solid #bbb;
+    column-width: 140px; } }
 
 /*# sourceMappingURL=main.css.map */

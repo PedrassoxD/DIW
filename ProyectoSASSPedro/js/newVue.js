@@ -1,5 +1,9 @@
+/* Variables adicionales */
+
 var arrayCoctel = [];
 var arrayCoctelSin = [];
+
+/* Funcion que desempeña el boton de la seccion de RandomCocktail */
 
 function mostrar() {
     document.getElementById('contenedor').style.display = "none";
@@ -8,6 +12,8 @@ function mostrar() {
 
 new Vue({
     el: "#app",
+
+    /* Variables que se usarán en el html */
     data: {
         textSearch: "",
         cocteles: []
@@ -36,10 +42,11 @@ new Vue({
         }
     },
     computed: {
-        artistFilter() {
+        /* Funcion para poder filtrar por nombre del cocktail */
+        coctelesFilter() {
             var textSearch = this.textSearch;
-            return this.artist.filter(function(el) {
-                return el.name.toLowerCase().indexOf(textSearch.toLowerCase()) !== -1;
+            return this.cocteles.filter(function(el) {
+                return el.strDrink.toLowerCase().indexOf(textSearch.toLowerCase()) !== -1;
             });
         }
     }
@@ -69,16 +76,7 @@ new Vue({
             .catch((error) => {
                 console.log(error);
             });
-    },
-    computed: {
-        artistFilter() {
-            var textSearch = this.textSearch;
-            return this.artist.filter(function(el) {
-                return el.name.toLowerCase().indexOf(textSearch.toLowerCase()) !== -1;
-            });
-        }
     }
-
 });
 
 
@@ -86,8 +84,7 @@ new Vue({
     el: "#app3",
     data: {
         textSearch: "",
-        coctelSinAlcohol: [],
-        descripCoctel: []
+        coctelSinAlcohol: []
     },
     created() {
         axios({
@@ -111,10 +108,10 @@ new Vue({
     },
 
     computed: {
-        artistFilter() {
+        coctelSinAlcoholFilter() {
             var textSearch = this.textSearch;
-            return this.artist.filter(function(el) {
-                return el.name.toLowerCase().indexOf(textSearch.toLowerCase()) !== -1;
+            return this.coctelSinAlcohol.filter(function(el) {
+                return el.strDrink.toLowerCase().indexOf(textSearch.toLowerCase()) !== -1;
             });
         }
     }

@@ -1,4 +1,4 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+/* Alternar entre añadir y quitar la clase "responsive" al topnav cuando el usuario hace clic en el icono */
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -7,6 +7,8 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+/* Funcion del boton del RandomCocktail para mostrar el card */
 
 function mostrar() {
     document.getElementById('contenedor').style.display = "none";
