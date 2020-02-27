@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <title>Cocktail Alcohol-Free</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollUp.js"></script>
+    <script>
+        $(function() {
+            $.scrollUp({
+                scrollImg: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <body style="text-align: center;">
+
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="cocktials.html">Cocktails With Alcohol</a>
+            <a href="cocktials-sin.html">Cocktails Alcohol-Free</a>
+            <a href="randomCocktail.html">Random Cocktail</a>
+            <a href="about.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+        <header style="color:black;">
+            <h1 class="titulo">Cocktail Information</h1>
+            <br>
+            <h4 class="subtitulo">Tu mejor página de información sobre Coktails.</h4>
+        </header>
+
+        <br>
+        <br>
+        <br>
+
+        <div id="app3" class="container" style="background-color: #ecf9ff;">
+            <hr style="opacity: 10%;">
+            <br>
+            <div style="text-align: center;">
+                <h1 class="tituloCock">Cocktails Alcohol-Free</h1>
+            </div>
+            <br>
+            <hr style="opacity: 10%;">
+            <input id="input-search" type="text" v-model="textSearch" placeholder='Cocktail name...'>
+            <main class="main">
+                <section class="cards" v-if="coctelSinAlcoholFilter && coctelSinAlcoholFilter.length">
+                    <div class="card" v-for="coctel of coctelSinAlcoholFilter">
+                        <div class="card__image-container">
+                            <img :src="coctel.strDrinkThumb" alt="">
+                        </div>
+                        <div class="card_content">
+                            <p class="card_title text--medium">
+                                {{coctel.strDrink}}
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <footer class="footer-distributed">
+            <div class="divContent">
+                <br>
+                <a href="https://www.github.com/PedrassoxD"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://twitter.com/SniperPedrito?lang=es"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="mailto:pedroperlab@gmail.com?Subject=Hola%20buenas%20tardes%20que%20desea"><i class="fab fa-google-plus-g fa-2x"></i></a>
+                <br><br>
+                <span>© 2020 Copyright: <a>PedroPJPL.com</a> - Aviso legal, política de privacidad y de cookies</span>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/vue "></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js "></script>
+        <script type="text/javascript" src="js/newVue.js"></script>
+        <script type="text/javascript" src="js/js.js"></script>
+
+    </body>
+
+</html>

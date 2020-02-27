@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <title>A cerca de nosotros</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollUp.js"></script>
+    <script>
+        $(function() {
+            $.scrollUp({
+                scrollImg: true
+            });
+        });
+    </script>
+</head>
+
+<body class="bd">
+
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="cocktials.html">Cocktails With Alcohol</a>
+        <a href="cocktials-sin.html">Cocktails Alcohol-Free</a>
+        <a href="randomCocktail.html">Random Cocktail</a>
+        <a href="about.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+
+    <div class="container-fluid" style="margin-top: 10rem;">
+        <div class="container">
+            <h1 class="tituloAbout">¿Quién somos?</h1>
+            <br>
+            <hr>
+            <p class="contentAbout">Respondiendo a la pregunta descrita, somos un grupo de estudiantes que han decidido realizar una web para informar a aquellos futuros "Bartender" de los tipos de cocktails que se pueden realizar, junto con sus instrucciones. También ofrecemos
+                una sección con la cuál probar vuestras habilidades, en la que pulsando un botón, se te mostrará un cocktail aleatorio, éste tendrás que intentar hacerlo tú para beberlo. Suerte!! ;)
+            </p>
+            <p class="contentAbout">Contamos con la ayuda de nuestro programador Pedro José Pérez Labrada, el que se ha encargado de crear esta página web.</p>
+            <h1 class="tituloAbout">Estudios</h1>
+            <p class="contentAbout">Técnico en Sistemas Microinformáticos y Redes</p>
+            <p class="contentAbout">Técnico superior en Desarrollo de Aplicaciones Web</p>
+            <br>
+            <h1 class="tituloAbout">¿Dónde estamos?</h1>
+            <p class="contentAbout">Búscanos por Google Maps!!</p>
+            <hr>
+            <div class="google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12680.950892231318!2d-6.003014730224635!3d37.384209999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c174466c2db%3A0x362aed61a4c89f2c!2sLe%20XIX!5e0!3m2!1ses!2ses!4v1582541671511!5m2!1ses!2ses"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+
+            <br>
+            <br>
+
+            <h2 class="titulo" style="text-align: center;">Escríbenos!!</h2>
+            <br>
+            <hr>
+            <br>
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" placeholder="Nombre...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="apellidos">Apellidos</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" placeholder="Apellidos...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="pais">País</label>
+                    </div>
+                    <div class="col-75">
+                        <select>
+                            <option value="espana">España</option>
+                            <option value="francia">Francia</option>
+                            <option value="alemania">Alemania</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="comentarios">Comentarios</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea placeholder="Escribe algún comentario..." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+        <div style="height: 10rem;"></div>
+    </div>
+
+    <footer class="footer-distributed">
+        <div class="divContent">
+            <br>
+            <a href="https://www.github.com/PedrassoxD"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://twitter.com/SniperPedrito?lang=es"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="mailto:pedroperlab@gmail.com?Subject=Hola%20buenas%20tardes%20que%20desea"><i class="fab fa-google-plus-g fa-2x"></i></a>
+            <br><br>
+            <span>© 2020 Copyright: <a>PedroPJPL.com</a> - Aviso legal, política de privacidad y de cookies</span>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/js.js"></script>
+</body>
+
+</html>
