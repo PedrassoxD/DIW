@@ -4,11 +4,23 @@
 /* Anchos y altos */
 /* Background */
 /* Display */
+/* Overflow */
+/* Variables Font */
+/* Variables contenedores */
+/* Variables Boton RandomCocktail */
+/* Variables Cards */
+/* Variables scrollUp */
 /* Medias para dispositivos */
 /* Posiciones */
 /* Anchos y altos */
 /* Background */
 /* Display */
+/* Overflow */
+/* Variables Font */
+/* Variables contenedores */
+/* Variables Boton RandomCocktail */
+/* Variables Cards */
+/* Variables scrollUp */
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
 .header header {
   padding-top: 10%; }
@@ -21,6 +33,12 @@
 /* Anchos y altos */
 /* Background */
 /* Display */
+/* Overflow */
+/* Variables Font */
+/* Variables contenedores */
+/* Variables Boton RandomCocktail */
+/* Variables Cards */
+/* Variables scrollUp */
 footer {
   position: relative;
   bottom: 0; }
@@ -48,6 +66,12 @@ footer > div > a {
 /* Anchos y altos */
 /* Background */
 /* Display */
+/* Overflow */
+/* Variables Font */
+/* Variables contenedores */
+/* Variables Boton RandomCocktail */
+/* Variables Cards */
+/* Variables scrollUp */
 /*  Añade un color de fondo negro a la navegación superior */
 .topnav {
   width: 100%;
@@ -118,6 +142,12 @@ Esta clase hace que el topnav se vea bien en pantallas pequeñas (muestra los en
 /* Anchos y altos */
 /* Background */
 /* Display */
+/* Overflow */
+/* Variables Font */
+/* Variables contenedores */
+/* Variables Boton RandomCocktail */
+/* Variables Cards */
+/* Variables scrollUp */
 /* Estilo de los Cards de las secciones de Cocktails */
 main {
   display: grid;
@@ -126,7 +156,7 @@ main {
   padding: 60px 0; }
 
 .cards {
-  grid-column: 2 / span 12;
+  grid-column: 2/span 12;
   display: grid;
   grid-template-columns: repeat(12, minmax(auto, 60px));
   grid-gap: 40px; }
@@ -194,7 +224,7 @@ main {
     grid-gap: 10px; }
 
   .cards {
-    grid-column-end: 2 / span 6;
+    grid-column-end: 2/span 6;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 20px; }
 
@@ -266,6 +296,12 @@ img {
 /* Anchos y altos */
 /* Background */
 /* Display */
+/* Overflow */
+/* Variables Font */
+/* Variables contenedores */
+/* Variables Boton RandomCocktail */
+/* Variables Cards */
+/* Variables scrollUp */
 .container {
   background-color: #ecf9ff;
   margin-right: auto;
@@ -299,19 +335,10 @@ img {
   margin-right: auto;
   margin-left: auto; }
 
-/* Estilo del botón de las secciones de cocktails con y sin alcohol, que permite subir arriba */
-#scrollUp {
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  background: url("../../assets/img/irArriba2.png");
-  background-size: cover; }
-
 /* Font */
 /* Estilos de los textos que aparecen en los cards de los cocktails */
 .text--medium {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -340,6 +367,12 @@ img {
 /* Anchos y altos */
 /* Background */
 /* Display */
+/* Overflow */
+/* Variables Font */
+/* Variables contenedores */
+/* Variables Boton RandomCocktail */
+/* Variables Cards */
+/* Variables scrollUp */
 /* Mapa de la sección ¿Quienes Somos? */
 .google-maps {
   position: relative;
@@ -421,6 +454,12 @@ input[type=submit] {
 /* Anchos y altos */
 /* Background */
 /* Display */
+/* Overflow */
+/* Variables Font */
+/* Variables contenedores */
+/* Variables Boton RandomCocktail */
+/* Variables Cards */
+/* Variables scrollUp */
 * {
   box-sizing: border-box;
   margin: 0;

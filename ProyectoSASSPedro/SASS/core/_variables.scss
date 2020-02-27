@@ -11,8 +11,8 @@ $media800: 800px;
 $media992: 992px;
 $media1000: 1000px;
 $mediaDesktop: 1280px;
-$media40r: 40rem;
-$media56r: 56rem;
+$media40rem: 40rem;
+$media56rem: 56rem;
 
 /* Posiciones */
 
@@ -39,9 +39,29 @@ $displayGrid: grid;
 
 $overflowH: hidden;
 
-/* Font */
+/* Variables Font */
 
+$tituloSize: 50px;
+$tituloMarginT: 50px;
+$tituloCockSize: 2em;
+$tituloAbt: 35px;
+$subtituloSize: 25px;
+$sizeText: 16px;
+$lineHText: 20px;
+$fontWeigthText400: 400;
+$colorText: #ecf0f1;
+$fFamilyText: 'Open Sans',
+sans-serif;
 $fontCalibri: Calibri;
+
+/* Variables contenedores */
+
+$maxWidth540: 540px;
+$maxWidth720: 720px;
+$maxWidth960: 960px;
+$maxWidth1140: 1140px;
+$marginR: auto;
+$marginL: auto;
 
 /* Variables Boton RandomCocktail */
 
@@ -53,8 +73,19 @@ $bBgColor: #1883ba;
 $bBorderR: 6px;
 $bBorder: 2px solid #0016b0;
 
-/* Variables Card Cocktails */
+/* Variables Cards */
 
-$cGridTemCol: 1fr repeat(12, minmax(auto, 60px)) 1fr;
-$cGridGap40: 40px;
-$cPadding60-0: 60px 0;
+$cflexdirColumn: column;
+$cAlignSelfend: end;
+$cAlignItemsCenter: center;
+$cVerticalAlginMiddle: middle;
+$span: span;
+
+/* Variables scrollUp */
+
+$scrBottom20: 20px;
+$scrRight20: 20px;
+$scrWdth50: 50px;
+$scrHight50: 50px;
+$scrBgImg: url("../../assets/img/irArriba2.png");
+$scrBgSize: cover;

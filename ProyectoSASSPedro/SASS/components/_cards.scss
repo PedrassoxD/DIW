@@ -4,22 +4,22 @@
 
 main {
     display: $displayGrid;
-    grid-template-columns: $cGridTemCol;
-    grid-gap: $cGridGap40;
-    padding: $cPadding60-0;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+    grid-gap: 40px;
+    padding: 60px 0;
 }
 
 .cards {
-    grid-column: 2 / span 12;
+    grid-column: 2 / $span 12;
     display: $displayGrid;
     grid-template-columns: repeat(12, minmax(auto, 60px));
-    grid-gap: $cGridGap40;
+    grid-gap: 40px;
 }
 
 .card {
-    grid-column-end: span 4;
+    grid-column-end: $span 4;
     display: $displayFlex;
-    flex-direction: column;
+    flex-direction: $cflexdirColumn;
     background-color: #39393b;
     transition: all 0.3s ease 0s;
 }
@@ -71,8 +71,8 @@ main {
 
 .card_info {
     display: $displayFlex;
-    align-self: end;
-    align-items: center;
+    align-self: $cAlignSelfend;
+    align-items: $cAlignItemsCenter;
 }
 
 
@@ -90,7 +90,7 @@ main {
 
 @media only screen and (max-width: $media1000) {
     .card {
-        grid-column-end: span 6;
+        grid-column-end: $span 6;
     }
 }
 
@@ -99,7 +99,7 @@ main {
         grid-gap: 20px;
     }
     .card {
-        grid-column-end: span 12;
+        grid-column-end: $span 12;
     }
 }
 
@@ -109,12 +109,12 @@ main {
         grid-gap: 10px;
     }
     .cards {
-        grid-column-end: 2 / span 6;
+        grid-column-end: 2 / $span 6;
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 20px;
     }
     .card {
-        grid-column-end: span 6;
+        grid-column-end: $span 6;
     }
 }
 
@@ -130,7 +130,7 @@ main {
 img {
     height: auto;
     max-width: $width100;
-    vertical-align: middle;
+    vertical-align: $cVerticalAlginMiddle;
 }
 
 
@@ -155,13 +155,13 @@ img {
 
 /* Medias para que el card sea responsive y se vea en distintos dispositivos */
 
-@media (min-width: $media40r) {
+@media (min-width: $media40rem) {
     .cards_itemRandom {
         width: $width50;
     }
 }
 
-@media (min-width: $media56r) {
+@media (min-width: $media56rem) {
     .cards_itemRandom {
         width: 33.3333%;
     }
@@ -175,7 +175,7 @@ img {
     border-radius: 0.25rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: $displayFlex;
-    flex-direction: column;
+    flex-direction: $cflexdirColumn;
     overflow: $overflowH;
 }
 
